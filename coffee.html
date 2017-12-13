@@ -1,0 +1,50 @@
+<html>
+   <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Coffee app</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class = "row">
+            <div class = "col">
+               <p class="title">Nini's Coffee Shop</p>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class = "row">
+            <div class = "col"> 
+               <button id="buttonView" class="btn btn-sm buttonStyle">view all orders</button>
+               <input type="text" id="searchBox" placeholder="enter your email"><button id="searchButton" class="btn btn-sm">search for your order</button>
+            </div>
+         </div>
+      </div>
+      <br>
+      <div class="container">
+         <div class="row">
+            <div class ="col-md-6">
+               <div class="card" id="allOrdersCard">
+                  <p class="titles">All orders</p>
+                  <ul id = "displayAllOrders">
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="card newOrderCard">
+                  <p class="titles">Create a new order</p>
+                  <label>Email address</label>
+                  <input type="email" class="form-control" id="newOrderEmail" aria-describedby="emailHelp" placeholder="Enter email"><br>
+                  <label>Order</label>
+                  <input type="text" class="form-control" id="newOrderUser" placeholder="enter your order"><br>
+                  <button id="submitOrder" class="btn btn-primary">Submit</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="js/app.js" type="text/javascript"></script>
+</html>

@@ -1,0 +1,18 @@
+.title {
+    font-family: 'Spirax', cursive;
+    font-size: 45px;
+}
+
+.listStyle{
+    list-style: none;
+}
+
+.titles {
+    text-align: center;
+    font-size:20px;
+    font-family: 'Spirax', cursive;
+}
+
+.newOrderCard {
+    padding:10px;
+}
