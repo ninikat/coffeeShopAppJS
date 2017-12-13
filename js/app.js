@@ -15,7 +15,6 @@ $('#buttonView').click(function(){
     $.get(allOrdersURL,getAll)
 })
 
-//searchButton, searchBox
 
 $('#searchButton').click(function(){
     let emailFromUser = $('#searchBox').val()
@@ -24,7 +23,7 @@ $('#searchButton').click(function(){
         alert("enter your email")
     }else{
     $.get(filteredURL,function(order){
-                console.log(order)
+                //console.log(order)
                 $('#displayAllOrders').html('')
                 let displayCoffee = `<li class="listStyle"><strong>email:</strong> ${order.emailAddress} <strong>order:</strong> ${order.coffee}</li><br>`
                 $('#displayAllOrders').append(displayCoffee)
